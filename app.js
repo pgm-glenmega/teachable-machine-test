@@ -1,4 +1,5 @@
 const URL = "./files/";
+
 let model, webcam, labelContainer, maxPredictions;
 let resemblances = []; // Array to store the units of resemblance
 
