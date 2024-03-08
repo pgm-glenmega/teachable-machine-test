@@ -1,9 +1,10 @@
+const URL = "./files/";
 let model, webcam, labelContainer, maxPredictions;
 let resemblances = []; // Array to store the units of resemblance
 
 async function init() {
-  const modelURL = "/files/model.json";
-  const metadataURL = "/files/metadata.json";
+  const modelURL = URL + "model.json";
+  const metadataURL = URL + "metadata.json";
   model = await tmImage.load(modelURL, metadataURL);
   maxPredictions = model.getTotalClasses();
   const flip = true;
